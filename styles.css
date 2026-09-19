@@ -303,15 +303,15 @@ a {
 }
 .darlings-banner {
   margin: 0;
-  overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: #050608;
 }
 .darlings-banner img {
+  display: block;
   width: 100%;
-  height: clamp(260px, 47vw, 720px);
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   filter: brightness(0.82) contrast(1.04);
 }
 .cards {
@@ -454,9 +454,10 @@ footer {
 }
 @media (max-width: 560px) {
   .darlings-banner img {
+    width: 100%;
     height: auto;
-    min-height: 220px;
-    object-fit: cover;
+    min-height: 0;
+    object-fit: contain;
   }
   .hero h1 {
     font-size: 3.35rem;

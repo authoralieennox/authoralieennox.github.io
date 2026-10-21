@@ -717,3 +717,28 @@ footer {
     margin-top: 25px;
   }
 }
+
+/* The homepage author teaser now uses a distinct editorial moment. */
+.author-quote {
+  width: min(390px, 100%);
+  margin: auto;
+  min-height: 320px;
+  padding: clamp(30px, 5vw, 55px);
+  background: linear-gradient(140deg, #111a32, #06080e 74%);
+  border: 1px solid rgba(95, 133, 239, .42);
+  box-shadow: 20px 25px 0 rgba(18, 61, 162, .22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.author-quote p {
+  color: #f7f5f0 !important;
+  font: 600 clamp(2.1rem, 4vw, 3.3rem)/1.05 var(--serif);
+  margin: 24px 0 40px;
+}
+.author-quote-sign {
+  color: #9baedb;
+  font: 700 .66rem var(--sans);
+  text-transform: uppercase;
+  letter-spacing: .18em;
+}
